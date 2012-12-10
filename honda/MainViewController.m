@@ -29,7 +29,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     self.myReaderView.readerDelegate = self;
-    self.scanButton.enabled = NO;
+    self.scanButton.enabled = YES;
+    self.index = @"Honda-Accord";
 }
 
 - (void)viewDidUnload
