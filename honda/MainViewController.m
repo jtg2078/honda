@@ -77,7 +77,7 @@
 
 - (void)connect
 {
-    NSString *urlString = @"ws://ec2-54-242-8-110.compute-1.amazonaws.com:8080/ws/honda2?index=%@";
+    NSString *urlString = @"ws://107.22.172.101:8080/ws/honda2?index=%@";
     NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:urlString, self.index]];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
     self.myWebsocket = [[SRWebSocket alloc] initWithURLRequest:request];
